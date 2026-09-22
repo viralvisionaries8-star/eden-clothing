@@ -1,0 +1,23 @@
+{
+  "name": "eden-clothing",
+  "version": "1.0.0",
+  "description": "Eden Clothing - Premium Streetwear at Better Prices",
+  "main": "products.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viralvisionaries8-star/eden-clothing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viralvisionaries8-star/eden-clothing/issues"
+  },
+  "homepage": "https://github.com/viralvisionaries8-star/eden-clothing#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
