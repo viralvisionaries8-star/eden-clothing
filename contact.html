@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Eden Clothing</title>
+    <meta name="description" content="Get in touch with Eden Clothing for questions about our streetwear collection, products, or brand. We'd love to hear from you.">
+    <meta name="keywords" content="contact Eden Clothing, Eden Clothing support, streetwear India">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="eden-pages.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="eden-page">
+
+<header class="site-header">
+    <a href="index.html" class="logo">EDEN<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+        ☰
+    </button>
+
+    <nav class="navigation" id="navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="products.html#collections">Collections</a>
+        <a href="about.html">Our Story</a>
+        <a href="blog.html">Journal</a>
+        <a href="contact.html" class="nav-contact active">Contact ↗</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+        <div class="eden-container">
+
+            <p class="eden-eyebrow">LET'S CONNECT</p>
+
+            <h1 class="eden-heading">
+                WE'D LOVE<br>TO HEAR FROM YOU.
+            </h1>
+
+            <p class="eden-text">
+                Have a question about Eden Clothing, our collection,
+                or our brand? Send us a message using the form below.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- CONTACT FORM AND INFORMATION -->
+    <section class="contact-section">
+        <div class="eden-container contact-grid">
+
+            <aside class="contact-info-card">
+
+                <p class="eden-eyebrow">GET IN TOUCH</p>
+
+                <h2>Let's talk Eden.</h2>
+
+                <p>
+                    Whether you want to know more about our products,
+                    share feedback, or ask a question about the brand,
+                    we're happy to hear from you.
+                </p>
+
+                <br>
+
+                <h3>Explore the collection</h3>
+
+                <p>
+                    Discover our streetwear and find pieces
+                    that match your personal style.
+                </p>
+
+                <a href="products.html">Shop the collection ↗</a>
+
+                <br><br>
+
+                <h3>Our story</h3>
+
+                <p>
+                    Learn more about our focus on self-expression,
+                    quality, accessible pricing, and thoughtful
+                    packaging.
+                </p>
+
+                <a href="about.html">Discover Eden ↗</a>
+
+            </aside>
+
+            <div>
+
+                <p class="eden-eyebrow">SEND A MESSAGE</p>
+
+                <h2 class="eden-heading" style="font-size: 42px;">
+                    How can we help?
+                </h2>
+
+                <form class="contact-form" id="contactForm">
+
+                    <div class="form-row">
+
+                        <div>
+                            <label for="name">Your Name *</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email Address *</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                required>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Choose a subject</option>
+                            <option value="Product enquiry">Product enquiry</option>
+                            <option value="Collection enquiry">Collection enquiry</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Collaboration">Collaboration</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message">Your Message *</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="eden-button">
+                        Send Message ↗
+                    </button>
+
+                    <p id="formMessage"
+                       class="form-message"
+                       role="status"
+                       aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="about-cta">
+        <div class="eden-container">
+
+            <p class="eden-eyebrow">READY TO FIND YOUR FIT?</p>
+
+            <h2>WEAR YOUR OWN STORY.</h2>
+
+            <p class="eden-text">
+                Explore Eden Clothing and make your everyday style
+                your own.
+            </p>
+
+            <br>
+
+            <a href="products.html" class="eden-button">
+                Shop the Collection ↗
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="eden-footer">
+    <div class="eden-footer-top">
+
+        <div>
+            <a href="index.html" class="footer-logo">EDEN<span>.</span></a>
+            <p>Wear your style. Grow your future.</p>
+        </div>
+
+        <div class="eden-footer-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="about.html">Our Story</a>
+            <a href="blog.html">Journal</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+    <div class="eden-footer-bottom">
+        <span>© 2026 Eden Clothing. All rights reserved.</span>
+        <span>WEAR YOUR OWN STORY.</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        formMessage.textContent =
+            "Thank you for your message! This is a demo form, so your details have not been sent or stored.";
+
+        contactForm.reset();
+    });
+</script>
+
+</body>
+</html>
