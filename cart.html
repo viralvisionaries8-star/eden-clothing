@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Cart | Eden Clothing</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+
+    <script src="cart.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="brand-logo">
+                EDEN<span>.</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="products.html#collections">Collections</a>
+                <a href="about.html">Our Story</a>
+                <a href="blog.html">Journal</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+
+                <a href="cart.html" class="cart-link active">
+                    CART (<span class="cart-count">0</span>)
+                </a>
+
+                <a href="products.html" class="nav-cta">
+                    SHOP NOW <span>↗</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="cart-page">
+
+        <section class="cart-heading">
+            <p class="eyebrow">EDEN CLOTHING / YOUR SELECTION</p>
+            <h1>YOUR <span>CART.</span></h1>
+            <p>Your style is waiting for you.</p>
+        </section>
+
+
+        <section class="cart-layout">
+
+            <div class="cart-products">
+
+                <h2>YOUR PIECES</h2>
+
+                <div id="cartItems"></div>
+
+                <div id="emptyCart" class="empty-cart">
+                    <h3>Your cart is looking a little empty.</h3>
+                    <p>Find something that feels like you.</p>
+
+                    <a href="products.html" class="cart-button">
+                        EXPLORE THE COLLECTION ↗
+                    </a>
+                </div>
+
+            </div>
+
+
+            <aside id="checkoutSection" class="cart-summary">
+
+                <h2>ORDER SUMMARY</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong id="cartSubtotal">₹0</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>Calculated separately</span>
+                </div>
+
+                <div class="summary-row summary-total">
+                    <span>Total</span>
+                    <strong id="cartTotal">₹0</strong>
+                </div>
+
+                <p class="cart-note">
+                    This is a website demonstration. No payment will be collected.
+                </p>
+
+                <a href="#checkoutForm" class="cart-button">
+                    CONTINUE TO CHECKOUT ↗
+                </a>
+
+                <a href="products.html" class="continue-shopping">
+                    ← Continue shopping
+                </a>
+
+            </aside>
+
+        </section>
+
+
+        <section id="checkoutForm" class="checkout-form-section">
+
+            <p class="eyebrow">ALMOST YOURS</p>
+            <h2>CHECKOUT <span>DETAILS.</span></h2>
+
+            <form id="demoCheckoutForm">
+
+                <div class="checkout-grid">
+
+                    <div class="form-field">
+                        <label for="customerName">Full Name</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="customerEmail">Email Address</label>
+                        <input type="email" id="customerEmail" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="customerPhone">Phone Number</label>
+                        <input type="tel" id="customerPhone" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="customerCity">City</label>
+                        <input type="text" id="customerCity" required>
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label for="customerAddress">Delivery Address</label>
+                        <textarea id="customerAddress" rows="4" required></textarea>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="cart-button">
+                    PLACE DEMO ORDER ↗
+                </button>
+
+                <p class="cart-note">
+                    Demo only: this button does not create a real order or process payment.
+                </p>
+
+            </form>
+
+            <p id="checkoutMessage" class="checkout-message"></p>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="brand-logo footer-logo">
+                    EDEN<span>.</span>
+                </a>
+
+                <p>
+                    WEAR YOUR OWN STORY.
+                </p>
+
+                <p class="footer-description">
+                    Quality-focused streetwear, better prices
+                    and a more thoughtful approach to packaging.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>EXPLORE</h3>
+
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="products.html#collections">Collections</a>
+                <a href="about.html">Our Story</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>DISCOVER</h3>
+
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html#sustainability">Sustainability</a>
+                 <a href="cart.html">Cart</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>FOLLOW THE JOURNEY</h3>
+
+                <a href="https://www.instagram.com/eden.xclothing/" target="_blank" rel="noopener noreferrer">
+                    Instagram ↗
+                </a>
+
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                    YouTube ↗
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    Facebook ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 EDEN CLOTHING. ALL RIGHTS RESERVED.</p>
+
+            <p>WEAR YOUR STYLE. GROW YOUR FUTURE.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        document.getElementById("demoCheckoutForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            if (getCart().length === 0) {
+                document.getElementById("checkoutMessage").textContent =
+                    "Your cart is empty. Please add a product first.";
+                return;
+            }
+
+            document.getElementById("checkoutMessage").textContent =
+                "Thank you! This was a demo checkout. No real order or payment was processed.";
+
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

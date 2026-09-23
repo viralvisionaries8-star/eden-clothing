@@ -1,0 +1,268 @@
+/* ==========================================
+   EDEN CLOTHING — CART PAGE
+========================================== */
+
+.cart-page {
+    background: #f5f3ed;
+    min-height: 100vh;
+    padding: 70px 6%;
+    color: #171717;
+}
+
+.cart-heading {
+    max-width: 1400px;
+    margin: 0 auto 60px;
+}
+
+.cart-heading .eyebrow,
+.checkout-form-section .eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #77776d;
+    margin-bottom: 20px;
+}
+
+.cart-heading h1,
+.checkout-form-section h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(45px, 7vw, 85px);
+    letter-spacing: -4px;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+.cart-heading h1 span,
+.checkout-form-section h2 span {
+    color: #829d42;
+}
+
+.cart-layout {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 55px;
+    align-items: start;
+}
+
+.cart-products h2,
+.cart-summary h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 23px;
+    margin: 0 0 25px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 130px 1fr auto;
+    gap: 22px;
+    padding: 22px 0;
+    border-bottom: 1px solid #d9d7cf;
+    align-items: start;
+}
+
+.cart-item img {
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    background: #e9e7df;
+}
+
+.cart-item-info h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 19px;
+    margin: 0 0 10px;
+}
+
+.cart-item-info p {
+    margin: 0 0 15px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #bbb;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.remove-item {
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+}
+
+.cart-summary {
+    background: #fff;
+    padding: 30px;
+    position: sticky;
+    top: 25px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 17px 0;
+    border-bottom: 1px solid #e5e3dc;
+    font-size: 14px;
+}
+
+.summary-total {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cart-note {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #777;
+    margin: 20px 0;
+}
+
+.cart-button {
+    display: block;
+    width: 100%;
+    padding: 17px 20px;
+    background: #171717;
+    color: #fff;
+    border: 1px solid #171717;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.cart-button:hover {
+    background: #829d42;
+    border-color: #829d42;
+}
+
+.continue-shopping {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-size: 13px;
+}
+
+.empty-cart {
+    padding: 35px 0;
+}
+
+.empty-cart h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+}
+
+.empty-cart p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.checkout-form-section {
+    max-width: 900px;
+    margin: 100px auto 30px;
+    padding: 50px;
+    background: #fff;
+}
+
+.checkout-form-section h2 {
+    font-size: clamp(38px, 5vw, 60px);
+    margin-bottom: 35px;
+}
+
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.form-field label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d5d3cb;
+    background: #fff;
+    font: inherit;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.checkout-message {
+    margin-top: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+@media (max-width: 850px) {
+    .cart-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-summary {
+        position: static;
+    }
+}
+
+@media (max-width: 550px) {
+    .cart-page {
+        padding: 45px 5%;
+    }
+
+    .cart-item {
+        grid-template-columns: 90px 1fr;
+        gap: 15px;
+    }
+
+    .cart-item img {
+        width: 90px;
+        height: 115px;
+    }
+
+    .cart-item > strong {
+        grid-column: 2;
+    }
+
+    .checkout-form-section {
+        padding: 25px 18px;
+        margin-top: 60px;
+    }
+
+    .checkout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+}
